@@ -1,0 +1,10 @@
+server:
+    port:8080
+
+kafka:
+   bootstrap-servers: kicakhost:9092
+   producer:
+     retries: 10
+     bootstrap-servers: ${spring.kafka.bootstrap-serves}
+     key-serializer: org.apache.kafka.common.serialization.StringSerializer
+     value-serializer: org.apache.kafka.common.serialization.StringSerializer
