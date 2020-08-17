@@ -1,10 +1,12 @@
 server:
-    port:8080
+  port: 8080
 
-kafka:
-   bootstrap-servers: kicakhost:9092
-   producer:
-     retries: 10
-     bootstrap-servers: ${spring.kafka.bootstrap-serves}
-     key-serializer: org.apache.kafka.common.serialization.StringSerializer
-     value-serializer: org.apache.kafka.common.serialization.StringSerializer
+spring:
+  application:
+    name: sistema-saude
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/sistema-saude
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
