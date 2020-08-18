@@ -14,7 +14,7 @@
   <artifactId>saude</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>saude</name>
-  <description>sistema saude </description>
+  <description>modulo saude</description>
 
   <properties>
     <java.version>1.8</java.version>
