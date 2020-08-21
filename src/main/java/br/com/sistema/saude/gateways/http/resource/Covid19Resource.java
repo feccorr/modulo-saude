@@ -22,6 +22,9 @@ public class Covid19Resource {
   @JsonFormat(pattern = "dd/MM/yyyy")
   private LocalDate data;
 
+  public Covid19Resource(Covid19 covid19) {
+  }
+
   public Covid19 toDomain() {
     final Covid19 covid19 = new Covid19();
     covid19.setQuantidade(quantidade);
