@@ -27,7 +27,7 @@ public class Covid19Controller {
   @ResponseStatus(OK)
   public ResponseEntity registrarCovid19(
       @RequestBody @Valid final Covid19Resource covid19Resource) {
-    registrarCovid19.execute(covid19Resource.toDomain());
+   // registrarCovid19.execute(covid19Resource.toDomain());
     return ResponseEntity.ok().build();
   }
 }

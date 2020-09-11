@@ -5,6 +5,8 @@ spring:
   application:
     name: sistema-saude
   data:
+    mongodb:
+      uri: mongodb://localhost:27017/sistema-saude
   kafka:
     bootstrap-server: localhost:9092
     producer:
